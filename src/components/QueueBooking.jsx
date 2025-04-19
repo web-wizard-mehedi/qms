@@ -49,7 +49,7 @@ export const QueueBooking = () => {
         return;
       }
 
-      const response = await fetch('https://qms-0xlk.onrender.com/api/queue/book', {
+      const response = await fetch('https://qms-19az.onrender.com/api/queue/book', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

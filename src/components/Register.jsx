@@ -13,7 +13,7 @@ const Register = () => {
   const onSubmit = async (data) => {
     setIsLoading(true);
     try {
-      const response = await fetch('https://qms-0xlk.onrender.com/api/auth/register', {
+      const response = await fetch('https://qms-19az.onrender.com/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

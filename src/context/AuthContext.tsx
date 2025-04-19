@@ -33,7 +33,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   const login = async (email: string, password: string) => {
     try {
-      const response = await fetch('https://qms-0xlk.onrender.com/api/auth/login', {
+      const response = await fetch('https://qms-19az.onrender.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -62,7 +62,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const updateUserProfile = async (name: string, phone: string) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('https://qms-0xlk.onrender.com/api/user/profile', {
+      const response = await fetch('https://qms-19az.onrender.com/api/user/profile', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

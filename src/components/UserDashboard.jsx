@@ -46,7 +46,7 @@ export const UserDashboard = () => {
   const fetchBookings = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('https://qms-0xlk.onrender.com/api/user/bookings', {
+      const response = await fetch('https://qms-19az.onrender.com/api/user/bookings', {
         headers: {
           'Authorization': `Bearer ${token}`
         }

@@ -1,6 +1,6 @@
 import { io } from 'socket.io-client';
 
-export const socket = io('https://qms-0xlk.onrender.com', {
+export const socket = io('https://qms-19az.onrender.com', {
   autoConnect: true,
   reconnection: true,
   reconnectionAttempts: 5,

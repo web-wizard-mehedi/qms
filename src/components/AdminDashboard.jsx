@@ -27,7 +27,7 @@ export const AdminDashboard = () => {
   const fetchQueues = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('https://qms-0xlk.onrender.com/api/queue/all', {
+      const response = await fetch('https://qms-19az.onrender.com/api/queue/all', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -76,7 +76,7 @@ export const AdminDashboard = () => {
   const handleNextCustomer = async (serviceType) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('https://qms-0xlk.onrender.com/api/queue/next', {
+      const response = await fetch('https://qms-19az.onrender.com/api/queue/next', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -98,7 +98,7 @@ export const AdminDashboard = () => {
   const handleCompleteService = async (queueId) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('https://qms-0xlk.onrender.com/api/queue/complete', {
+      const response = await fetch('https://qms-19az.onrender.com/api/queue/complete', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
