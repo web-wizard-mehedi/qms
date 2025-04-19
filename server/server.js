@@ -13,7 +13,7 @@ const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
-    origin: "*",
+    origin: "https://sqms.netlify.app/",
     methods: ["GET", "POST"]
   }
 });
